@@ -4,14 +4,14 @@
 1. User Interface translation in Drupal
 <!-- Configuration -->
 
-![](images/2022-08-22-22-58-40.png)
+![](/images/2022-08-22-22-58-40.png)
 
 ---
 
 # Translate with i18n
 
 2. Content translation / Field translation
-<img class="w-2/3" src="images/2022-08-22-23-02-48.png" />
+<img class="w-2/3" src="/images/2022-08-22-23-02-48.png" />
 
 3. Translation in Twig
 

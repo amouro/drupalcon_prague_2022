@@ -39,7 +39,7 @@ https://unsplash.com/photos/AGtksbL8z2c
     <h3>Japanese "fifty sounds"</h3>
   </div>
   <div class="flex-1 ">
-    <img src="images/2022-09-04-17-28-34.png" class="h-124 w-auto" />
+    <img src="/images/2022-09-04-17-28-34.png" class="h-124 w-auto" />
   </div>
 </div>
 
@@ -57,11 +57,11 @@ https://unsplash.com/photos/AGtksbL8z2c
   </div>
   <div class="flex-1 flex flex-row space-x-4">
     <div>
-        <img src="images/2022-09-04-17-28-34.png" class="h-118 w-auto" />
+        <img src="/images/2022-09-04-17-28-34.png" class="h-118 w-auto" />
         <h4 class="mt-2">Hiragana</h4>
     </div>
     <div>
-        <img src="images/2022-09-06-17-51-19.png" class="h-118 w-auto" />
+        <img src="/images/2022-09-06-17-51-19.png" class="h-118 w-auto" />
         <h4 class="mt-2">Katagana</h4>
     </div>
   </div>
@@ -80,7 +80,7 @@ https://unsplash.com/photos/AGtksbL8z2c
     <h3>Characters in Japanese</h3>
   </div>
   <div class="flex-1 ">
-    <img src="images/raku-japanese-character.png" class="h-124 w-auto" />
+    <img src="/images/raku-japanese-character.png" class="h-124 w-auto" />
   </div>
 </div>
 
@@ -119,7 +119,7 @@ $array = [
 ```
   </div>
   <div class="flex-1 ">
-    <img src="images/2022-09-04-17-28-34.png" class="" />
+    <img src="/images/2022-09-04-17-28-34.png" class="" />
   </div>
 </div>
 ---
@@ -149,7 +149,7 @@ $array = [
 
   </div>
   <div class="flex-1 ">
-    <img src="images/2022-09-04-17-28-34.png" class="" />
+    <img src="/images/2022-09-04-17-28-34.png" class="" />
   </div>
 </div>
 
@@ -170,7 +170,7 @@ $array = [
   <div class="">
     <h1>Chinese characters</h1>
     <h3>4 attributes</h3>
-    <img src="images/2022-09-01-22-41-43.png" class="mt-6" />
+    <img src="/images/2022-09-01-22-41-43.png" class="mt-6" />
   </div>
   <div class="">
     <div class="grid grid-cols-2 text-2xl">
@@ -201,20 +201,20 @@ Multiple pronunciation
 <div class="grid grid-cols-2">
     <div class="grid-1">
         <div class="flex flex-row items-center">
-            <img src="images/2022-09-02-15-36-40.png" alt="" class="h-full w-auto" />
+            <img src="/images/2022-09-02-15-36-40.png" alt="" class="h-full w-auto" />
             <span class="pl-4">Music</span>
         </div>
         <div class="flex flex-row items-center">
-            <img src="images/2022-09-02-15-37-09.png" alt="" class="h-full w-auto" />
+            <img src="/images/2022-09-02-15-37-09.png" alt="" class="h-full w-auto" />
             <span class="pl-4">Happy, Happiness, love to</span>
         </div>
         <div class="flex flex-row items-center">
-            <img src="images/2022-09-02-15-37-43.png" alt="" class="h-full w-auto" />
+            <img src="/images/2022-09-02-15-37-43.png" alt="" class="h-full w-auto" />
             <span class="pl-4">To appreciate</span>
         </div>
     </div>
     <div class="grid-2 flex justify-center">
-        <img src="images/le-chinese-character.png" class="h-90" />
+        <img src="/images/le-chinese-character.png" class="h-90" />
     </div>
 </div>
 
@@ -226,7 +226,7 @@ image: images/raku-japanese-character.png
 # Sorting
 Multiple pronunciation
 
-![](images/raku-japanese-pronounce.png)
+![](/images/raku-japanese-pronounce.png)
 
 1. ❶ Music
 2. <span class="text-gray-500">❶ To play (music)</span>

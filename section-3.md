@@ -97,7 +97,7 @@ Abbreviation: พ.ศ. (phaaw-sǎaw)
   </div>
   <div class="flex-1">
 
-![](images/2022-08-29-23-06-41.png)
+![](/images/2022-08-29-23-06-41.png)
 
 Milan Vlach / Mathematician
 Born: October 29, 1936 (age 85 years), Prague, Czechia
