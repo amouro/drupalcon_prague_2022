@@ -1,6 +1,6 @@
 ---
 layout: intro-image
-image: images/sorting-soraya-irving.jpg
+image: /images/sorting-soraya-irving.jpg
 ---
 
 <div class="hidden">
@@ -194,7 +194,6 @@ Bopomofo is the predominant phonetic system in teaching, reading and writing in 
 
 ---
 
-
 # Sorting
 Multiple pronunciation
 
@@ -220,7 +219,7 @@ Multiple pronunciation
 
 ---
 layout: image-right
-image: images/raku-japanese-character.png
+image: /images/raku-japanese-character.png
 ---
 
 # Sorting

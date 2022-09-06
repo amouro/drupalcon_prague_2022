@@ -1,6 +1,6 @@
 ---
 layout: intro-image
-image: images/cover-beyond-i18n-edho-pratama.png
+image: /images/cover-beyond-i18n-edho-pratama.png
 ---
 
 <div class="hidden">

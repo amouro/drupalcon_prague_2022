@@ -1,6 +1,6 @@
 ---
 layout: intro-image
-image: images/cjk-cover-left.png
+image: /images/cjk-cover-left.png
 #layout: 3-images
 #imageLeft: images/cjk-cover-left.png
 
