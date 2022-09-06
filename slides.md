@@ -92,7 +92,11 @@ src: ./section-4.md
 ---
 <!-- this page will be loaded from './section-4.md' -->
 # 4. Issue that happens exclusively in CJK
-
+---
+src: ./section-5.md
+---
+<!-- this page will be loaded from './section-5.md' -->
+# 5. Sorting
 ---
 
 # ------------------------
