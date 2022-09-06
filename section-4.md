@@ -1,11 +1,11 @@
 ---
 layout: intro-image
-image: /images/cjk-cover-left.png
+image: images/cjk-cover-left.png
 #layout: 3-images
-#imageLeft: /images/cjk-cover-left.png
+#imageLeft: images/cjk-cover-left.png
 
-imageTopRight: /images/cjk-cover-right-top.png
-imageBottomRight: /images/cjk-cover-right-bottom.png
+imageTopRight: images/cjk-cover-right-top.png
+imageBottomRight: images/cjk-cover-right-bottom.png
 ---
 
 <div class="hidden">

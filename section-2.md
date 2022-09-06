@@ -1,6 +1,6 @@
 ---
 layout: intro-image
-image: image/cover-beyond-i18n-edho-pratama.png
+image: images/cover-beyond-i18n-edho-pratama.png
 ---
 
 <div class="hidden">
@@ -101,7 +101,7 @@ Despite the capabilities of web and app development to accommodate multiple lang
 
 https://www.linkedin.com/pulse/text-expansion-contraction-translation-jennifer-murphy
 <div>
-  <img src="/images/translation-ratio.png" class="w-4/5"/>
+  <img src="images/translation-ratio.png" class="w-4/5"/>
 </div>
 
 <!--
@@ -111,7 +111,7 @@ As previously mentioned, German will be considerably longer than, for example, E
 
 # Natural Language Forms
 
-![](/images/2022-08-28-23-29-07.png)
+![](images/2022-08-28-23-29-07.png)
 
 ---
 

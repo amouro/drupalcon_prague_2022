@@ -1,6 +1,6 @@
 ---
 layout: intro-image
-image: /images/calendar-sept-estee-janssens.jpg
+image: images/calendar-sept-estee-janssens.jpg
 ---
 
 <div class="hidden">
@@ -52,14 +52,14 @@ YYYY 年 mm 月 dd 日
 
 ---
 layout: image
-image: /images/2022-08-29-23-18-14.png
+image: images/2022-08-29-23-18-14.png
 ---
 
 # Calendar Year
 
 ---
 layout: image
-image: /images/2022-08-29-23-26-19.png
+image: images/2022-08-29-23-26-19.png
 ---
 
 # Calendar Year
@@ -97,7 +97,7 @@ Abbreviation: พ.ศ. (phaaw-sǎaw)
   </div>
   <div class="flex-1">
 
-![](/images/2022-08-29-23-06-41.png)
+![](images/2022-08-29-23-06-41.png)
 
 Milan Vlach / Mathematician
 Born: October 29, 1936 (age 85 years), Prague, Czechia
