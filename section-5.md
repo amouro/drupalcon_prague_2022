@@ -122,6 +122,75 @@ $array = [
     <img src="/images/2022-09-04-17-28-34.png" class="" />
   </div>
 </div>
+
+---
+
+<div class="hidden">
+# Sorting - 五十音 (Gojūon) Sorting
+</div>
+
+<div class="absolute top-10">
+  <h2>五十音 (Gojūon)</h2>
+  <h3>Japanese "fifty sounds"</h3>
+</div>
+
+<div class="grid grid-cols-2 gap-8 mt-10">
+  <div class="flex flex-col justify-end">
+
+```ts
+$array = [
+  'あまガミ', // Hiragana
+  'ウィーン', // Katagana
+  '荻野', // Kanji
+  'マーティン',
+  'ういーん',
+  '中村',
+  'Ülf', // Latin & Number
+  'レアード',
+  '角中',
+  'OKEON',
+  '井上',
+  '藤岡',
+  '佐藤',
+  'SHIMA',
+  '岩下',
+];
+```
+  </div>
+  <div class="flex-1 ">
+
+```ts {all|4-6|7-8|9-11|12-18|all}
+// Result
+Array
+(
+    [0] => OKEON
+    [1] => SHIMA
+    [2] => Ülf
+    [3] => あまガミ
+    [4] => ういーん
+    [5] => ウィーン
+    [6] => マーティン
+    [7] => レアード
+    [8] => 中村
+    [9] => 井上
+    [10] => 佐藤
+    [11] => 岩下
+    [12] => 荻野
+    [13] => 藤岡
+    [14] => 角中
+)
+```
+  </div>
+</div>
+
+<!--
+1. 記号
+2. 数字
+3. アルファベット（全角含む）
+4. ひらがな
+5. カタカナ
+6. 漢字
+-->
 ---
 
 <div class="hidden">
@@ -194,7 +263,11 @@ Bopomofo is the predominant phonetic system in teaching, reading and writing in 
 
 ---
 
-# Sorting
+<div class="hidden">
+# Sorting - Chinese pronunciation
+</div>
+
+# Chinese
 Multiple pronunciation
 
 <div class="grid grid-cols-2">
@@ -222,7 +295,11 @@ layout: image-right
 image: /images/raku-japanese-character.png
 ---
 
-# Sorting
+<div class="hidden">
+# Sorting - Japanese pronunciation
+</div>
+
+# Japanese Kanji
 Multiple pronunciation
 
 ![](/images/raku-japanese-pronounce.png)

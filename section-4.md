@@ -35,8 +35,8 @@ https://unsplash.com/photos/T6fDN60bMWY
 
 # Autocomplete search suggestion
 
-1. Input Chinese or Japanese Kanji consists of one to four phonetic elements
-2. Same pronouciation could have more than one words
+- Input Chinese or Japanese Kanji consists of one to four phonetic elements
+- Same pronouciation could have more than one words
 
 <video controls>
   <source src="https://d.pr/v/vjS5Xr+" type="video/mp4" />
@@ -65,10 +65,10 @@ composition events https://github.com/oist/oist-www/issues94#issuecomment-100966
 
 | Keyword      | Segments      | Segments |
 | ------------ | ------------- | -------- |
-| Mobile Phone | | 12 |
-| 携帯 (keitai) | け い た い (ke i ta i) | 6 |
-| 手機 (shǒujī) | ㄕㄡˇ ㄐㄧ⎵ | 6 |
-| 移動電話 (yídòngdiànhuà)| (yi2 dong4 dian4 hua4) | 17 |
+| Computer | | 8 |
+| コンピューター (konpyūtā)| kon pyu- ta- | 10 |
+| 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 |
+| 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 |
 
 ---
 
@@ -78,7 +78,7 @@ Implement `CompositionEvent` to avoid trigger search too early.
 
 [MDN Web API](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent)
 
-```javascript { }
+```javascript {all|11-15|2-7|2-9}
   inputElement.on('input, compositinoend', function (event) {
     if (event.type == 'compositionend') {
         compositionActive = false;
@@ -96,7 +96,7 @@ Implement `CompositionEvent` to avoid trigger search too early.
   })
 ```
 
-[Core: Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
+[Core #2823589: Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
 <!-- 
   // TODO find the trace of autocomplete js in Drupal 8 or even 7
   how did Drupal handle the composition events before.
