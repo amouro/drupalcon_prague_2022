@@ -68,7 +68,7 @@ Translation in Twig
 
 Translate a sentence with t() function and variables that allow us to place the var in alternative position
 
-```php{all|3-5}
+```php{all|2-5|7-10}
   $sentence_translation = 
   t(
     'No crop types available. <a href="@link">Add crop type</a>.', // Sentence
@@ -82,7 +82,7 @@ Translate a sentence with t() function and variables that allow us to place the 
 ```
 
 
-```md
+```json
 //ja.po
 
 msgctxt "As an action"

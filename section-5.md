@@ -4,7 +4,7 @@ image: /images/sorting-soraya-irving.jpg
 ---
 
 <div class="hidden">
-# ===== Issue in Sorting =====
+# ===== Issue in CJK: Sorting =====
 </div>
 
 <div class="absolute top-10">
@@ -361,10 +361,31 @@ console.log(items);
 ---
 
 # Sorting
-Sort Russian or Persian language
+Sort Ukrainian or Persian language
 
-localeCompare()
+🇺🇦
+```ts
+const items = ['Албанія','Єгипет','Індія','Перу'];
+items.sort();
+console.log(items);
+// ['Єгипет', 'Індія', 'Албанія', 'Перу']
 
+items.sort((a, b) => a.localeCompare(b, 'uk', { ignorePunctuation: true }));
+console.log(items);
+// ['Албанія', 'Єгипет', 'Індія', 'Перу']
+```
+<hr />
+
+```ts
+const items = ['گیلان', 'سمنان', 'چهار محال بختیاری', 'مشهد', 'قم'];
+items.sort();
+console.log(items);
+// ['سمنان', 'قم', 'مشهد', "چهار محال بختیاری", 'گیلان']
+
+items.sort((a, b) => a.localeCompare(b, 'fr', { ignorePunctuation: true }));
+console.log(items);
+// ['چهار محال بختیاری", 'سمنان', 'قم', 'گیلان', 'مشهد"] 
+```
 
 
 ---
@@ -382,32 +403,61 @@ items.sort();
 console.log(items);
 // ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
 // "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
-
 // "Nakamura", "Inoue", "Sato", "Iwashita", "Ogino", "Fujioka", "Kakunaka"
-
 ```
 
 ```ts
-
 items.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
-
 console.log(items);
 // ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
 // "井上", "荻野", "角中", "岩下", "佐藤", "中村", "藤岡"]
-
 // "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
 ```
 
-フリガナ
-Keiko kono
-河野　かわの　こうの
+```php
+function sortWithLocale($arr) {
+  Collator::create('ja_JP.utf8')->sort($arr, SORT_LOCALE_STRING);
+  return $arr;
+}
 
-整
+// ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
+// "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
+```
 
 
 <!--
 岩下 Iwashita 被判斷成 Gan shita
+フリガナ
+Keiko kono
+河野　かわの　こうの
+
 -->
+
+---
+
+# Sorting
+
+Sort in Chinese
+
+```ts
+const items = [
+  '基隆', '台北', '桃園', '新竹', '苗栗', '台中', '彰化', '雲林', '嘉義', '高雄', '屏東', '花蓮', '宜蘭',
+];
+items.sort();
+           
+console.log(items);
+// ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
+// "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
+// "Nakamura", "Inoue", "Sato", "Iwashita", "Ogino", "Fujioka", "Kakunaka"
+```
+
+```ts
+items.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
+console.log(items);
+// ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
+// "井上", "荻野", "角中", "岩下", "佐藤", "中村", "藤岡"]
+// "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
+```
 
 ---
 

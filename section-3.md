@@ -68,7 +68,7 @@ layout: fact
 # JP/TW Date format using Gregorian Calendar
 </div>
 
-<h1 class="!text-8xl">
+<h1 class="!text-7xl">
 YYYY<span class="text-blue-400">年</span>mm<span class="text-blue-400">年</span>dd<span class="text-blue-400">日</span>
 </h1>
 
@@ -101,13 +101,14 @@ image: /images/2022-08-29-23-26-19.png
 | Calendar            | Year | Type                    |
 | --------            | ---- | ---------               |
 | AD                  | 2022 | Gregorian               |
-| 令和　(rei wa)　     | 4    | Imperial Era            |
-| 民國　(míng gúo)　   | 111  | Label of the Birth Year |
 | พุทธศักราช (พ.ศ.) B.E | 2565 | Buddhist Era            |
+| 民國　(míng gúo)　   | 111  | Label of the Birth Year |
+| 令和　(rei wa)　     | 4    | Imperial Era            |
 
 <!--
 Thai: พุทธศักราช (phút-thá-sàk-gà-ràat) + year
 Abbreviation: พ.ศ. (phaaw-sǎaw)
+B.E. Buddist Era
 -->
 
 ---
@@ -117,9 +118,9 @@ Abbreviation: พ.ศ. (phaaw-sǎaw)
 | Calendar            | Year | Calculation      |
 | --------            | ---- | ---------        |
 | AD                  | 2022 | getYear()        |
-| <span class="text-red-400">令和　(rei wa)</span>  　　　| 4    | getYear() <span class="text-orange-400">- 2018</span> |
+| พุทธศักราช (พ.ศ.) B.E | 2565 | getYear() <span class="text-green-500">+ 543</span>  |
 | 民國　(míng gúo)  　　| 111  | getYear() <span class="text-orange-400">- 1911</span> |
-| พุทธศักราช (พ.ศ.) B.E | 2565 | getYear() <span class="text-orange-400">+ 543</span>  |
+| <span class="text-red-400">令和　(rei wa)</span>  　　　| 4    | getYear() <span class="text-orange-400">- 2018</span> |
 
 
 ---
@@ -128,13 +129,14 @@ Abbreviation: พ.ศ. (phaaw-sǎaw)
 
 <div class="grid grid-cols-2">
   <div class="flex flex-col justify-center text-gray-500 dark:text-gray-400">
-    <h2 class="text-gray-900 dark:text-gray-100">Milan Vlach</h2>
-    <small class="text-lg"> Mathematician</small>
-    <p>Born: <br />October 29, 1936 (age 85 years), Prague, Czechia</p>
-    <h2 class="text-gray-900 dark:text-gray-100">昭和 11 年 10 月 29 日</h2>
+    <h2 class="text-gray-900 dark:text-gray-100">R. Weinstein</h2>
+    <small class="text-lg">Doctor</small>
+    <p class="text-xl">A pass issued to leave the Shanghai ghetto in 1945. <br />
+    <span class="text-sm">JMP, Oral History Collection, No. 549 (copy)</span></p>
+    <h2 class="text-gray-900 dark:text-gray-100">Initially valid from <br />昭和 18 年 2 月 29 日</h2>
   </div>
   <div>
-      <img src="/images/2022-08-29-23-06-41.png" class="h-96 w-auto" />
+      <img src="/images/permission_spanish_synagoge.jpg" class="h-96 w-auto" />
   </div>
 </div>
 
@@ -157,3 +159,17 @@ Abbreviation: พ.ศ. (phaaw-sǎaw)
     <img src="/images/imperial-year-jp.png" class="h-110 w-auto" />
   </div>
 </div>
+
+---
+
+# Use CLDR to convert the date
+
+```ts
+new Date().toLocaleDateString('ja-JP-u-ca-japanese', { dateStyle: 'long' })
+// '令和4年9月9日'
+new Date().toLocaleDateString('zh-hant-u-ca-roc', { dateStyle: 'long' })
+// '民國111年9月9日'
+new Date().toLocaleDateString('th-u-ca-BE', { dateStyle: 'full' })
+// 'วันศุกร์ที่ 9 กันยายน พ.ศ. 2565'
+
+```

@@ -94,7 +94,6 @@ Despite the capabilities of web and app development to accommodate multiple lang
 | Japanese | パスワードフィールドの入力は必須です。 | 338px | <span class="text-red-600">150%</span> |
 | Korean   | 비밀번호를 입력해야 합니다. 　   | 215px | <span class="text-green-600">95%</span> |
 
-
 ---
 
 # Expansion / Contraction
@@ -107,6 +106,19 @@ https://www.linkedin.com/pulse/text-expansion-contraction-translation-jennifer-m
 <!--
 As previously mentioned, German will be considerably longer than, for example, English copy. Or Koreans may not use spaces to separate words. This will mess up a non-adaptive layout. In an interview, Sonia Sánchez Moreno, Director of Sylaba Translations, points out that the Spanish language expands about 30% over English. A translator can save you significant money on redesigning parts of your product where translations won’t fit.
 -->
+---
+
+# Design with translation in mind
+
+<div class="flex flex-col overflow-y-scroll mb-4">
+  <div class="grid grid-cols-2 gap-2 h-100">
+    <img src="/images/hp-variation-en.png" />
+    <img src="/images/hp-variation-ja.png" />
+  </div>
+</div>
+<div class="text-center margin-auto text-gray-400/40">
+    Scroll ⭥
+</div>
 ---
 
 # Natural Language Forms
@@ -147,7 +159,7 @@ As previously mentioned, German will be considerably longer than, for example, E
     @apply text-blue-500;
   }
   .n3 {
-    @apply text-orange-300;
+    @apply text-orange-500;
   }
   .n4 {
     @apply text-green-500;
@@ -188,7 +200,7 @@ As previously mentioned, German will be considerably longer than, for example, E
     @apply text-blue-500;
   }
   .n3 {
-    @apply text-orange-300;
+    @apply text-orange-500;
   }
   .n4 {
     @apply text-green-500;

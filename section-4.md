@@ -9,7 +9,7 @@ imageBottomRight: images/cjk-cover-right-bottom.png
 ---
 
 <div class="hidden">
-# ===== Issue in CJK =====
+# ===== Issue in CJK: Typing =====
 </div>
 
 <div class="absolute top-10">
@@ -28,36 +28,91 @@ background image: Photo by Edho Pratama on Unsplash
 https://unsplash.com/photos/T6fDN60bMWY
 -->
 
-<!--
--->
-
 ---
 
 # Autocomplete search suggestion
 
+What can you see?
+
+<video controls>
+  <source src="images/SyI343.mp4" type="video/mp4" />
+</video>
+
+<!--  
 - Input Chinese or Japanese Kanji consists of one to four phonetic elements
 - Same pronouciation could have more than one words
-
-<video controls>
-  <source src="https://d.pr/v/vjS5Xr+" type="video/mp4" />
-</video>
-<!-- Configuration 
-composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
 -->
 
 ---
 
-# Autocomplete search suggestion
+# CJK Paragraph
 
-Bad example
+<hr />
 
-<video controls>
-  <source src="https://d.pr/v/SyI343+" type="video/mp4" />
-</video>
+<div class="grid grid-cols-3 gap-4 items-start text-sm mt-4">
+<div>
 
-<!-- Configuration 
-composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
+## 我是 COVID-19 確診個案，應該要注意甚麼:
+
+大部分的 COVID-19 感染者症狀輕微，休養後即可自行康復，為了將醫療資源留
+給重症患者，請您先留在家中不要離開，等候公衛人員通知。
+
+務必觀察自身症狀變化，若出現以下症狀時，請立即通知所在地政府衛生局或撥打
+119 就醫，以 119 救護車為原則或指示之防疫計程車、同住親友接送或自行前往
+(如步行、 自行駕/騎車)等方式為輔：喘、呼吸困難、持續胸痛、胸悶、意識不清、
+皮膚或嘴唇或指甲床發青。
+</div>
+<div>
+
+## 보건소에서 코로나19 양성 통보를 받았다면, 이렇게 하세요
+
+검체채취일로부터 7일까지는 타인에게 바이러스를 전염시킬 위험이 있어 격리합니다.
+오미크론 변이는 델타 변이보다 중증도가 낮으므로 증상이 없거나 경증인 경우 해열제, 감기약 복용 등 대증치료로 회복할 수 있습니다. [코로나19와 오미크론 변이] 바로가기
+
+발열 등 증상으로 진료가 필요하면, 외래진료센터 대면진료 또는 전화 상담·처방이 가능합니다.
+감염전파 방지를 위해 외출하지 말고 가급적 집에 머무르며, 화장실‧물건 등은 동거인과 따로 사용하고 자주 소독해야 합니다.[청소와소독] 바로가기
+
+</div>
+<div>
+
+## 新型コロナウイルス感染症、症状がある方はためらわずに連絡を！
+
+宿泊療養・自宅療養者アンケート調査によって、世代を問わず多くの方が、コロナ感染が判明する前から、
+【発熱、頭痛、体のだるさ、せき、のどの痛み】といった自覚症状を訴えていたことがわかりました。
+
+これらの症状を複数感じ、不安に思ったときは、どうぞためらわず、「かかりつけ医・身近な医療機関」や「発熱相談センター」へご連絡、ご相談ください。
+</div>
+</div>
+
+<!--
+What to do if you receive a positive COVID-19 notification from a public health center
 -->
+---
+
+# Input method
+
+<div class="grid grid-cols-4 gap-2 items-end">
+    <div>
+        <img src="/images/2022-09-09-14-35-49.png" />
+    </div>
+    <div>
+        <img src="/images/2022-09-09-14-36-35.png" />
+    </div>
+    <div>
+        <img src="/images/2022-09-09-14-44-38.png" />
+    </div>
+    <div>
+        <img src="/images/2022-09-09-14-46-18.png" />
+    </div>
+    <div>
+        <img src="/images/2022-09-09-14-39-25.png" />
+    </div>
+    <div class="col-span-2">
+        <img src="/images/2022-09-09-14-41-00.png" />
+    </div>
+
+</div>
+
 
 ---
 
@@ -69,6 +124,19 @@ composition events https://github.com/oist/oist-www/issues94#issuecomment-100966
 | コンピューター (konpyūtā)| kon pyu- ta- | 10 |
 | 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 |
 | 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 |
+
+---
+
+# Autocomplete search suggestion
+
+What is <span class="bg-green-300 p-1">improved</span>?
+
+<video controls>
+  <source src="images/vjS5Xr.mp4" type="video/mp4" />
+</video>
+<!-- Configuration 
+composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
+-->
 
 ---
 
