@@ -35,7 +35,7 @@ https://unsplash.com/photos/T6fDN60bMWY
 What can you see?
 
 <video controls>
-  <source src="images/SyI343.mp4" type="video/mp4" />
+  <source src="/images/SyI343.mp4" type="video/mp4" />
 </video>
 
 <!--  
@@ -132,7 +132,7 @@ What to do if you receive a positive COVID-19 notification from a public health 
 What is <span class="bg-green-300 p-1">improved</span>?
 
 <video controls>
-  <source src="images/vjS5Xr.mp4" type="video/mp4" />
+  <source src="/images/vjS5Xr.mp4" type="video/mp4" />
 </video>
 <!-- Configuration 
 composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
