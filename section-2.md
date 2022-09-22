@@ -24,6 +24,11 @@ https://unsplash.com/photos/T6fDN60bMWY
 -->
 
 <!--
+So, Drupal provides many the solutions.
+We know how do we make multi-lang web site on Drupal.
+Is it already enough, the answer is "no" clearly.
+
+Next slide >>>>>
 -->
 
 ---
@@ -46,17 +51,21 @@ https://unsplash.com/photos/T6fDN60bMWY
   <em class="text-xl">by Yen Fu</em>
 </div>
 
-
+<!--
+Yen Fu (simplified Chinese: 严复; traditional Chinese: 嚴復; pinyin: Yán Fù; 8 January 1854 — 27 October 1921) 
+-->
 
 <!--
-Yan Fu (simplified Chinese: 严复; traditional Chinese: 嚴復; pinyin: Yán Fù; 8 January 1854 — 27 October 1921) was a Chinese military officer, newspaper editor, translator, and writer. He was most famous for introducing western ideas, including Darwin's "natural selection", to China in the late 19th century. 
+There was a Chinese newspaper editor, translator, and writer. Yen Fu, He was most famous for introducing western ideas, including Darwin's "natural selection", to China in the late 19th century. 
 
+He address the three difficulties in translation "信，達，雅"
 The three difficulties became the model of a ideal in translation and influence the translation a lot in publication.
 
 An ideal translation to Chinese or Japanese that follows the three principle could make the length of translation very different from English or to English.
 
-
+Next slide >>>>>
 -->
+
 
 ---
 
@@ -71,6 +80,10 @@ An ideal translation to Chinese or Japanese that follows the three principle cou
 | Japanese | 翻訳する    | <span class="text-green-600">91%</span> |
 | Korean   | 번역하다 　   | <span class="text-green-600">83%</span> |
 
+<!--
+3 things to keep in mind when designing UI to be translated in different languages
+https://blog.prototypr.io/3-things-to-keep-in-mind-when-designing-ui-to-be-translated-in-different-languages-e1d02accf21c
+-->
 
 <!--
 websites and apps
@@ -79,6 +92,14 @@ Most of the latest CMS platforms are now translation friendly and built to handl
 Despite the capabilities of web and app development to accommodate multiple languages, it is worth considering a final round of post-localization review. Linguists will review your site and/or app to ensure the appropriate translations were used, have been placed properly, fit the space, and function according to the developer’s specifications.
 
 // https://eriksen.com/language/text-expansion/
+
+-->
+
+<!--
+Take the verb "Translate" as an example, the length is different accross languages.
+We can see Chinese and Japanese shares similar character here, but still different.
+
+Next slide >>>>>
 -->
 
 ---
@@ -94,6 +115,15 @@ Despite the capabilities of web and app development to accommodate multiple lang
 | Japanese | パスワードフィールドの入力は必須です。 | 338px | <span class="text-red-600">150%</span> |
 | Korean   | 비밀번호를 입력해야 합니다. 　   | 215px | <span class="text-green-600">95%</span> |
 
+<!--
+Let's expand it a little, take the sentence in Drupal UI as an example.
+It is a help text for the password field for login.
+
+How much different in the nuance and length now?
+Although "fill" is not in the origin English sentence, we see it shows in Deutsch and Chinese and Japanese at least.
+
+Next slide >>>>>
+-->
 ---
 
 # Expansion / Contraction
@@ -104,7 +134,11 @@ https://www.linkedin.com/pulse/text-expansion-contraction-translation-jennifer-m
 </div>
 
 <!--
-As previously mentioned, German will be considerably longer than, for example, English copy. Or Koreans may not use spaces to separate words. This will mess up a non-adaptive layout. In an interview, Sonia Sánchez Moreno, Director of Sylaba Translations, points out that the Spanish language expands about 30% over English. A translator can save you significant money on redesigning parts of your product where translations won’t fit.
+As previously mentioned, German will be considerably longer than, for example, English copy. Or Koreans may not use spaces to separate words, and Japanese could be longer or shorter than English coopy in the mean time. This expansion or contraction will mess up a non-adaptive layout. 
+
+The best way to accommodate the situation, if the translated page is really crucial to your website, it is better to mocking up the design with actual text as soon as possible.
+
+Next slide >>>>>
 -->
 ---
 
@@ -116,15 +150,35 @@ As previously mentioned, German will be considerably longer than, for example, E
     <img src="/images/hp-variation-ja.png" />
   </div>
 </div>
-<div class="text-center margin-auto text-gray-400/40">
+<div class="text-center margin-auto text-gray-500/80">
     Scroll ⭥
 </div>
+
+<!--
+In the homepage of our new website design, we want to keep the rhythm and portion of each section.
+
+Our designer checks the balance of the design, decide where the text should be break into next line, how many rows should we use for different language.
+Our translator also help reducing the translation when necessary.
+
+The longer the original text it is, the more it needs to be taken care of.
+
+Next slide >>>>>
+-->
+
 ---
 
 # Natural Language Forms
 
 ![](/images/2022-08-28-23-29-07.png)
 
+<!--
+During my research of localize the user experience, I found a interesting UI design which is called Natural Lanugage Form.
+
+It tries to make the form into a dialog, blend the fields into a sentence, to communicate to the user naturally.
+However, this is not very suitable for tranlation.
+
+Next slide >>>>>
+-->
 ---
 
 # Natural Language Forms
@@ -166,7 +220,14 @@ As previously mentioned, German will be considerably longer than, for example, E
   }
 </style>
 
-<!-- Note -->
+<!-- 
+Because a good translation of a full sentence or paragraph need to be natural to the speaker.
+
+In this example, the fields could be the same order in English or French.
+
+Next slide >>>>>
+
+-->
 
 ---
 
@@ -206,3 +267,13 @@ As previously mentioned, German will be considerably longer than, for example, E
     @apply text-green-500;
   }
 </style>
+
+<!--
+But in Deutsch or Japanese, the position of time or date is more strict in the sentence. 
+The mix of translation and fields position cannot be easy resolved by using the t() function.
+
+So, I started to think in my experience, what localization issues that are beyond the text translation.
+What efforts do we do in our institue who treat two languages equally important.
+
+Next Slide >>>>>
+-->

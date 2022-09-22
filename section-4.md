@@ -28,6 +28,14 @@ background image: Photo by Edho Pratama on Unsplash
 https://unsplash.com/photos/T6fDN60bMWY
 -->
 
+<!-- 
+Let's focus on CJK world closer.
+
+It is easy to type latin alphabets on keyboard, how does words being typed in CJK?
+
+Next slide >>>>>
+
+-->
 ---
 
 # Autocomplete search suggestion
@@ -39,8 +47,14 @@ What can you see?
 </video>
 
 <!--  
+This is a short clip shows how we can type the autocompleted search keywords in Japanese
+
 - Input Chinese or Japanese Kanji consists of one to four phonetic elements
 - Same pronouciation could have more than one words
+
+The main issue here is the autocompletd triggers the search too early before the word has been chosen or the typing is finished.
+
+Next slide >>>>>
 -->
 
 ---
@@ -85,7 +99,13 @@ What can you see?
 </div>
 
 <!--
+These are pagragraphs in CJK about 
 What to do if you receive a positive COVID-19 notification from a public health center
+
+You can see the paragraph rarely has spaces in the sentence.
+(We use kuromoji when we index the data in Elastice search to get the text indexed and split into words correctly.)
+
+Next slide >>>>>
 -->
 ---
 
@@ -113,6 +133,14 @@ What to do if you receive a positive COVID-19 notification from a public health 
 
 </div>
 
+<!--
+How do we type, what's our keyboards look like?
+
+From left to right, we see two Traditional Chinese keyboard with 倉頡 and then 注音
+And there are two Korean keyboard layout and two Japanese layout on in mobile with a 3by3 grid or a comapct keyboard layout which has the 50 essential sound characters.
+
+Next slide >>>>>
+-->
 
 ---
 
@@ -124,6 +152,18 @@ What to do if you receive a positive COVID-19 notification from a public health 
 | コンピューター (konpyūtā)| kon pyu- ta- | 10 |
 | 電腦 (diànnǎo) | ㄉ一ㄢˋ ㄋㄠˇ | 7 |
 | 计算机 (jìsuànjī)| jisuanji / jsj | 8 / 3 |
+
+<!--
+When type the word for computer, the key strokes are also different.
+
+It is also different term in Traditional Chinese use in Taiwan or Simplified Chinese in China.
+
+When entering CJK text, we would like to wait until the word
+is entered. This can be done using a set of special Javascript events.
+
+Next slide >>>>>
+
+-->
 
 ---
 
@@ -138,33 +178,48 @@ What is <span class="bg-green-300 p-1">improved</span>?
 composition events https://github.com/oist/oist-www/issues94#issuecomment-1009660884
 -->
 
+<!--
+
+The english typing works normally, and the Japanese word for Corona, only query once the word is decided.
+
+Next slide >>>>>
+-->
+
 ---
 
 # CompositionEvent 
 
 Implement `CompositionEvent` to avoid trigger search too early.
 
-[MDN Web API](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent)
+<div class="grid grid-row-2 grid-col-2 gap-2">
+<div>
 
-```javascript {all|11-15|2-7|2-9}
+```javascript {all|7-11|2-3|2-5}
   inputElement.on('input, compositinoend', function (event) {
-    if (event.type == 'compositionend') {
-        compositionActive = false;
-    }
-    if (compositionActive) {
-        return;
-    }
+    if (event.type == 'compositionend') { compositionActive = false; }
+    if (compositionActive) { return; }
 
     //...do autocomplete AJAX call
-
+    
   }).on('compositionstart', function () {
     compositionActive = true;
   }).on('compositionupdate', function() {
     compositionActive = true;
   })
 ```
+</div>
+<div>
+
+[MDN Web API](https://developer.mozilla.org/en-US/docs/Web/API/CompositionEvent)
 
 [Core #2823589: Improve IME handling on Autocomplete](https://www.drupal.org/project/drupal/issues/2823589)
+</div>
+<iframe class="col-span-2 bg-blue-600/30 p-4 w-full" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/API/Element/compositionstart_event/_sample_.live_example.html" width="960" height="480"></iframe>
+
+
+</div>
+
+
 <!-- 
   // TODO find the trace of autocomplete js in Drupal 8 or even 7
   how did Drupal handle the composition events before.
@@ -228,9 +283,17 @@ Implement `CompositionEvent` to avoid trigger search too early.
 -->
 
 <!--
-    // When entering Japanese text, we would like to wait until the word
-    // is entered. This can be done using a set of special Javascript
-    // events.
-    // @see https://caniuse.com/?search=compositionstart
+
+There is CompositionEvent that we can use to detect the correct moment of the finish of the input.
+(RIGHT >>>)
+
+We treat the compositionupdate and start as typing in progress (RIGHT >>>)
+
+And when the word is decided, there will be a compositionEnd event and we can started to (RIGHT >>>) trigger the query with AJAX
+
+Phew...
+
+Next slide >>>>>
 -->
+
 

@@ -24,6 +24,15 @@ https://unsplash.com/photos/AGtksbL8z2c
 -->
 
 <!--
+Now we know how to type in CJK.
+The last part of this presentation, let's dig further in the language.
+I promise this is not language class.
+
+In english we sometimes sort with the alphabet for title of articles, taxonomy tags, or site names for example.
+
+How does CJK do in the similar way?
+
+Next slide >>>>>
 -->
 
 ---
@@ -43,6 +52,12 @@ https://unsplash.com/photos/AGtksbL8z2c
   </div>
 </div>
 
+<!-- 
+In Japanese the order of the Gojuon is the main ordering system. 
+It is based on the phenentical elements.
+
+Next slide >>>>>
+-->
 ---
 
 <div class="hidden">
@@ -67,6 +82,12 @@ https://unsplash.com/photos/AGtksbL8z2c
   </div>
 </div>
 
+<!--
+And there are Hiragana for main Japanese language, and Katagana often used for translate the foreign language or new invented terms.
+
+Next slide >>>>>
+-->
+
 ---
 
 <div class="hidden">
@@ -83,6 +104,12 @@ https://unsplash.com/photos/AGtksbL8z2c
     <img src="/images/raku-japanese-character.png" class="h-124 w-auto" />
   </div>
 </div>
+
+<!--
+And also Chinese Character which is called Kanji in Japanese.
+
+Next slide >>>>>
+-->
 
 ---
 
@@ -123,6 +150,14 @@ $array = [
   </div>
 </div>
 
+
+<!--
+Any title, term, sentence can start with the above three characters.
+Latin and Numbers, Hiragana, Katagana and Kanji.
+How do we sort them correctly?
+
+Next slide >>>>>
+-->
 ---
 
 <div class="hidden">
@@ -184,12 +219,22 @@ Array
 </div>
 
 <!--
+The ideal order looks like this.
+Starting with Symbols, Numbers, Alphabets like in English.
+
+And than Hiragana, Katagana, the last part will be the Kanji.
+Hiragana and Katagana is actually follow the order of the matrix starting from rows and than columns.
+
+How about the Kanji?
+
 1. 記号
 2. 数字
 3. アルファベット（全角含む）
 4. ひらがな
 5. カタカナ
 6. 漢字
+
+Next slide >>>>>
 -->
 ---
 
@@ -225,6 +270,18 @@ Array
 
 
 <!-- 
+Use sort() function directly, it is sorting by the index number the character is in the Unicode table. How ever it doesn't help to find the character in the Japanese speaker's mind.
+
+With localeCompare() in JS.
+The Kanji sorting started with the pronouciation of the first character and then the next character if first character is the same.
+If I write down the number of its row and number of the character, you can see the it is in the incremental order.
+But, why is there a 1-2 in the middle?
+
+It is because the Kanji could have more than one pronounciation.
+Let's hold this thought and jumps to Chinese for now.
+
+Next slide >>>>>
+
 日本漢字的音讀最為明顯，日本漢字的讀法一般有二個以上，是因不同時期、不同地方傳入的結果。 在普通話中亦間有取自遊牧民族等其他民族語言、梵語、其他漢語語言或方言的發音屬於此類。
 
 -->
@@ -248,14 +305,24 @@ Array
         <li>Total Strokes</li>
       </ul>
       <ul>
-        <li>Pinyin</li>
         <li>Bopomofo (Phonetic characters)</li>
+        <li>Pinyin</li>
       </ul>
     </div>
   </div>
 </div>
 
 <!--
+I call Czech Republica "捷克" in Chinese which consists of two characters, the first character 捷, has all the attributes that could be used for sorting.
+That's correct, more than one way.
+
+We can count its total strokes, radical stokes, spell it with phonetical elements that only uses in Taiwan, or Pinyin with roman characters which is the main input method in China.
+
+Usually we order with one of the attributes and sometimes let the user change the sorting method, for instance the book search system in a library.
+When there is symbol or roman alphabets, they also come first like in Japanese.
+
+Next slide >>>>>
+
 
 Bopomofo is the predominant phonetic system in teaching, reading and writing in elementary school in Taiwan. 
 
@@ -290,6 +357,14 @@ Multiple pronunciation
     </div>
 </div>
 
+<!--
+Like in Japanese, it is also common that a traditional Chinese can have mutiple pronounciation.
+
+This is the character means stands for 樂 Music, or 樂 for Happy or Happiness or 樂 for verb "To appreciate".
+
+Next slide >>>>>
+-->
+
 ---
 layout: image-right
 image: /images/raku-japanese-character.png
@@ -309,6 +384,15 @@ Multiple pronunciation
 3. ❷ Happy
 4. ❸ To appreciate
 
+<!--
+Japanese has the same character with their own variation.
+It has more pronounciation due to different cultural context.
+
+Four of them or inherited from ancient Chinese in various eras, and another four represent things in the original Japanese language 
+
+Next slides >>>>>
+-->
+
 ---
 layout: fact
 ---
@@ -325,6 +409,14 @@ In 2012, 683 was reviewed and combined into single pronounciation.
 
 1. 教育部國語一字多音審訂表 2012 [PDF](https://language.moe.gov.tw/files/people_files/%E5%88%9D%E7%A8%BF.pdf)
 </div>
+
+<!--
+So how many characters has more than one pronounciation?
+In the official definition from the Ministry of Education of Taiwan, there are 580 out of 5,000 common used traditional Chinese characters.
+It was over 1200 before the officials reviewed and merged a lot of them in 2012.
+
+Next slide >>>>>
+-->
 ---
 layout: fact
 ---
@@ -341,6 +433,9 @@ Same Japanese character different pronounciation
 1. Explaination about Kanji (EN): [Website](https://www.tofugu.com/japanese/onyomi-kunyomi/)
 </div>
 
+<!--
+Japanese Kanji also has more than 600 out of 2,000 common characters which has more than one pronounciations.
+-->
 ---
 
 # Sorting
@@ -358,12 +453,16 @@ console.log(items);
 // ['Adieu', 'café', 'Cliché', 'communiqué', 'Premier', 'réservé']
 ```
 
+<!--
+With localCompare() in JavaScript, we can specify a language code, it provides better sorting that taking care of the variation of characters.
+
+Next slide >>>>>
+-->
 ---
 
 # Sorting
-Sort Ukrainian or Persian language
+Sort Ukrainian or Persian language 🇺🇦
 
-🇺🇦
 ```ts
 const items = ['Албанія','Єгипет','Індія','Перу'];
 items.sort();
@@ -387,6 +486,11 @@ console.log(items);
 // ['چهار محال بختیاری", 'سمنان', 'قم', 'گیلان', 'مشهد"] 
 ```
 
+<!--
+It also works well with Ukrain, or arabic or farsi languages.
+
+Next slide >>>>>
+-->
 
 ---
 
@@ -398,15 +502,7 @@ Sort in Japanese
 const items = [
   'あまガミ', 'ウィーン', '荻野', 'ういーん', '中村', 'レアード', '角中', 'OKEON', '井上', '藤岡', '佐藤', 'SHIMA', '岩下',
 ];
-items.sort();
-           
-console.log(items);
-// ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
-// "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
-// "Nakamura", "Inoue", "Sato", "Iwashita", "Ogino", "Fujioka", "Kakunaka"
-```
 
-```ts
 items.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
 console.log(items);
 // ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
@@ -414,6 +510,7 @@ console.log(items);
 // "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
 ```
 
+// PHP
 ```php
 function sortWithLocale($arr) {
   Collator::create('ja_JP.utf8')->sort($arr, SORT_LOCALE_STRING);
@@ -426,6 +523,11 @@ function sortWithLocale($arr) {
 
 
 <!--
+For Japanese, it is also order by the phonetic order, including the Kanji.
+PHP does have similar feature, but I would recommand sorting in database query to get a better sorting result.
+
+Next slide >>>>>
+
 岩下 Iwashita 被判斷成 Gan shita
 フリガナ
 Keiko kono
@@ -446,33 +548,95 @@ const items = [
 items.sort();
            
 console.log(items);
-// ["OKEON", "SHIMA", "あまガミ", "ういーん", "ウィーン", "レアード", 
-// "中村", "井上", "佐藤", "岩下", "荻野", "藤岡", "角中"]
-// "Nakamura", "Inoue", "Sato", "Iwashita", "Ogino", "Fujioka", "Kakunaka"
+// ['台中', '台北', '嘉義', '基隆', '宜蘭', '屏東', '彰化', '新竹', '桃園', '花蓮', '苗栗', '雲林', '高雄']
 ```
 
 ```ts
-items.sort((a, b) => a.localeCompare(b, 'ja-JP', { ignorePunctuation: true }));
-console.log(items);
-// ["OKEON", "SHIMA", "あまガミ", "ウィーン", "ういーん", "レアード", 
-// "井上", "荻野", "角中", "岩下", "佐藤", "中村", "藤岡"]
-// "Inoue", "Ogino", "Kakunaka", "Iwashita", "Sato", "Nakamura", "Fujioka"]
+items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-stroke', {ignorePunctuation: true }));
+// ['台中', '台北', '宜蘭', '花蓮', '屏東', '苗栗', '桃園', '高雄', '基隆', '雲林', '新竹', '嘉義', '彰化']
 ```
+
+```ts
+items.sort((a, b) => a.localeCompare(b, 'zh-Hant-TW-u-co-zhuyin', {ignorePunctuation: true }));
+// ['屏東', '苗栗', '台北', '台中', '桃園', '高雄', '花蓮', '基隆', '嘉義', '新竹', '彰化', '宜蘭', '雲林']
+```
+
+<!--
+In Traditional Chinese, localeCompare() also works with various attributes that I mentioned before.
+By strokes, by the Phonetic zhuyin.
+
+Or use pinyin for Simplified Chinese.
+
+Next slides >>>>>
+-->
 
 ---
 
-# Sorting
+<div class="hidden">
+# Sorting - Chinese pronunciation
+</div>
+
+# Chinese
 Multiple pronunciation
 
-## What happens to the Character that has multiple pronunciation?
+<div class="grid grid-cols-2">
+    <div class="grid-1">
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-36-40.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">Music</span>
+        </div>
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-37-09.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">Happy, Happiness, love to</span>
+        </div>
+        <div class="flex flex-row items-center">
+            <img src="/images/2022-09-02-15-37-43.png" alt="" class="h-full w-auto" />
+            <span class="pl-4">To appreciate</span>
+        </div>
+    </div>
+    <div class="grid-2 flex justify-center">
+        <img src="/images/le-chinese-character.png" class="h-90" />
+    </div>
+</div>
 
-This only affects
+<!--
+Lastly for multiple pronouciation characters, what do we do?
+
+The answer is we do Nothing in general.
+
+Next slide >>>>>
+-->
+---
+
+# Sorting
+What happens to the Character that has multiple pronunciation?
+
+<div class="grid grid-cols-2 gap-4 pt-8">
+<div>
+
+## This affects
 
 - Japanese Kanji
 - Chinese characters sorting in 
   - Pinyin (zh-CN)
   - Bopomofo (Library, material for Children)
 
+</div>
+<div>
+
 ## Solution
 - Leave it as-is
 - Customize it and make a explicit order in a array
+</div>
+</div>
+
+<!--
+This issue only affects Japanese Kanji, or when sorting with Chinese character with phonetic element using Zhuyin or Pinyin.
+
+Native speakers know the common variations of the pronouciation, when we process in head, it is processed together.
+
+Sometimes if the client request to make it in the explicit order, the better way it to map the words into a pre-defined table or array.
+In the end it will be a fully customized array.
+
+Next slide >>>>>
+-->

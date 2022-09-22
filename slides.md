@@ -47,29 +47,88 @@ fonts:
 
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Good afternoon, I hope you all have a good DrupalCon in Prague. In this session I'm going to talk about things around how to localize user experiences. 
+Especially experience in CJK languages.
+
+We have many tool to help with translations, but understand how to localize the user experience can make the website design better.
+If you don't know CJK yet, lets embrace some culture shock; If you are or may working on websites with CJK, I hope this will be helpful.
+
+I already regret to submit the proposal for a short session when I making the slide. There are so much to talk, let's start the journey.
 -->
 
 ---
 
-# Intro
-Chris
+# Chris Wu
 
+<div class="grid grid-cols-[1fr,2fr] grid-rows-2 gap-4 py-8">
+  <div class="image rounded-full content-center flex flex-col">
+    <img src="/images/chris_potrait.png" class="rounded-full overflow-hidden" />
+  </div>
+  <div class="intro flex flex-row items-center">
+  
+  1. 🇹🇼  
+  1. Senior Web Developer, OIST
+  1. Designer, Developer, former DUGTW member
+  1. 
+  1. <a href="https://twitter.com/amourow" target="_blank" alt="GitHub"
+      class="text-xl icon-btn mt-8 !border-none !hover:text-white bg-blue-600 text-white hover:bg-blue-600/80">
+      <carbon-logo-twitter /> @amourow</a>
+
+  </div>
+
+  <div></div>
+  <div class="pl-4">
+    
+  </div>
+</div>
+<!--
+I'm a Taiwanese Drupal developer works in a international research institution in Japan. 
+During my 14 years Drupal adventure (according to Drupal dot org), I designed and made websites in Traditional Chinese and Japanese and English.
+
+I'm now working in a Japanese research institute which use English and Japanese as equaly important first language.
+Our team always make sure the experience of both languages are well perceived. 
+
+Next slides >>>
+
+-->
 
 ---
+layout: intro-image-right
+image: /images/campus.png
+---
 
-# Intro
-OIST
+<div class="hidden">
+# Intro: OIST
+</div>
+
+<div class="absolute top-10 flex items-center">
+  <div class="w-12">
+    <img src="/images/2022-09-21-23-03-19.png" />
+  </div>
+  <div class="w-96 my-0 ml-4 leading-6">
+    Okinawa Institute of <br />Science and Technology
+  </div>
+</div>
+
+<blockquote class="content-end">
+  <h2>Ivory Tower of Babel</h2>
+  <p> Website design and development challenges for a multidisciplinary, multinational, multicultural, multilingual science and technology university in Japan</p>
+  <p class="text-gray-400"> Sep. 20 by Micheal Cooper</p>
+</blockquote>
+
+<!--
+OIST is public found by the Japanese Government directly from the cabinet office. 
+It is a interdisciplinary research institute, if you are interested in this insititute, please do watch the presentation from Tuesday by Micheal Cooper.
+
+
+-->
 
 ---
 layout: intro-image
@@ -89,6 +148,12 @@ No part of this presentation should be considered an endorsement.
 <div class="text-3xl font-700 text-gray-100 text-center self-end mb-8">
 Disclaimer
 </div>
+
+<!--
+Before jumping the the topic, please noted that there is no endorsement for vendors, if I mentioned any. 
+
+Next slide >>>
+-->
 
 ---
 src: ./section-1.md
@@ -118,10 +183,29 @@ src: ./section-5.md
 # 5. Sorting
 
 ---
-layout: center
-class: text-center
+layout: intro-image
+image: /images/DCE2022_content.png
 ---
 
-# Learn More
+<div class="text-gray-700 pt-12">
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+# Recap
+
+* What to consider beyond i18n
+* Calendar & date besides Gregorian calendar
+* CJK input method
+* Sorting methods regarding locales
+
+<div class="pt-12">
+
+Online slide: https://prague.amou.ro
+</div>
+</div>
+---
+layout: image
+image: /images/DCE2022_thanks.png
+---
+
+<div class="hidden">
+# Thank you
+</div>
